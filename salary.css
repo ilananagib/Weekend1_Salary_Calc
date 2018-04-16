@@ -1,0 +1,61 @@
+body {
+    background-color: #F8F8FF;
+}
+
+.calculator {
+    margin-left: 250px;
+    margin-right: 250px;
+    width: 900px;
+    background-color: rgb(85, 84, 84);
+}
+
+h1 {
+    color: lightgrey;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inputAreas {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 20px;
+}
+
+input[type=text], input[type=number] {
+    border: 1px solid black;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.button {
+    margin-left: 1000px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 14px
+}
+
+.employeesInfo {
+    margin-left:250px;
+    margin-right: 250px;
+    text-align: left;
+}
+
+#employeesTable {
+    width: 900px;
+    border: 1px solid black;
+}
+
+#employeesTable th {
+    background-color:rgb(172, 172, 172);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+
+#total {
+    margin-left: 850px;
+}
+
