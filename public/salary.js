@@ -3,15 +3,18 @@ console.log('Jquery is ready');
 $(document).ready(readyNow);
 
 let addEmployee = 0;
+let monthlyCost = 0;
 
 function readyNow(){
     $('.button').on('click', clickClick);
     console.log('Button works');
+}
 
 function clickClick(){
-    addEmployee++;
+    updateMonthlyTotal();
     addNewEmployee();
     clearInputs();
+    
 }
 
 function updateEmployees(){
@@ -29,12 +32,22 @@ function addNewEmployee(){
         '</tr>'
 );
 }
+
 function clearInputs(){
 $('#firstName').val('');
 $('#lastName').val('');
 $('#employeeId').val('');
 $('#employeeTitle').val('');
 $('#annualSalary').val('');
+
 }
 
+function updateMonthlyTotal(){
+    let hardFunction = ($('#annualSalary').val() / 12);
+    monthlyCost += hardFunction;
+    //$('#totalSalaries').remove();
+    $('#totalSalaries').text('Total Monthly: $' + monthlyCost);
+    if (monthlyCost > 20000) {
+        $('#totalSalaries').css('background-color', 'red');
+}
 }
